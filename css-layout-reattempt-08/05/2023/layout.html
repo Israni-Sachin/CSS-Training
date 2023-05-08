@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+        }
+
+        .one,
+        .two {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+        }
+
+        .one {
+            margin-right: 20px;
+        }
+
+        .o1,
+        .o2 {
+            padding-inline: 40px;
+            padding-block: 5px;
+            background-color: rgb(105, 228, 228);
+            color: white;
+            margin: 4px;
+        }
+
+        .o3 {
+            padding-inline: 30px;
+            margin-right: 80px;
+            padding-block: 5px;
+            background-color: grey;
+        }
+
+        .o4 {
+            padding-inline: 55px;
+            margin-right: 10px;
+            padding-block: 5px;
+            background-color: grey;
+        }
+
+        .img {
+            width: 20px;
+            height: 20px;
+            border-radius: 10px;
+            background-color: grey;
+            margin-right: 20px;
+        }
+
+        .tow {
+            width: 100%;
+            background-color: rgb(105, 228, 228);
+            margin-block: 10px;
+            height: 100px;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .teen {
+            width: 70vw;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px auto;
+        }
+
+        .teen1 {
+            width: 55vw;
+            height: 100%;
+        }
+
+        .teen2 {
+            width: 15vw;
+            height: 60vh;
+        }
+
+        .con {
+            background-color: rgb(105, 228, 228);
+            height: 20%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .bot {
+            background-color: rgb(105, 228, 228);
+            height: 20%;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .cont {
+            background-color: rgb(105, 228, 228);
+            height: 60%;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: grey;
+        }
+
+        .top {
+            width: 70vw;
+            background-color: rgb(105, 228, 228);
+            margin: 0px auto;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .bott {
+            width: 70vw;
+            background-color: rgb(105, 228, 228);
+            margin: 0px auto;
+            margin-top: 30px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .pri {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin: 0px 0px 0px 10px;
+            height: 105%;
+            background-color: rgb(105, 228, 228);
+        }
+
+        .black {
+            height: 200px;
+            background-color: black;
+            margin-top: 10px;
+        }
+
+        .gr1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70%;
+            width: 70vw;
+            margin: auto;
+            color: white;
+        }
+
+        .grs {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(105, 228, 228);
+            margin-inline: 5px;
+            margin-top: 15px;
+            height: 100%;
+            width: 25%;
+        }
+
+        .gr2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 15%;
+            width: 70vw;
+            margin: 20px auto;
+            color: white;
+        }
+
+        .re {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30px;
+            width: 50%;
+            background-color: rgb(105, 228, 228);
+            margin-inline: 5px;
+        }
+
+        .grey {
+            height: 100px;
+            background-color: rgb(69, 67, 67);
+            padding: 5px;
+        }
+
+        .red {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            background-color: rgb(105, 228, 228);
+            margin: 20px auto;
+            padding-block: px;
+            width: 30vw;
+        }
+
+        .reds {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            background-color: rgb(105, 228, 228);
+            margin: auto;
+            padding-block: px;
+            width: 30vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="one">
+            <div class="o1">Header Topbar Left</div>
+            <div class="o2">Header Topbar Right</div>
+        </div>
+        <div class="two">
+            <div class="o3">Logo</div>
+            <div class="o4"> Navigation Menu</div>
+            <div class="img"></div>
+        </div>
+
+        <div class="tow">Top Fullwidth</div>
+
+        <div class="man">
+            <div class="top">Top</div>
+            <div class="teen">
+                <div class="teen1">
+                    <div class="con">Content Top</div>
+                    <div class="cont">Content</div>
+                    <div class="bot">Content Bottom</div>
+                </div>
+                <div class="teen2">
+                    <div class="pri">Primary</div>
+                </div>
+            </div>
+            <div class="bott">Bottom</div>
+        </div>
+        <div class="black">
+            <div class="gr1">
+                <div class="grs">First</div>
+                <div class="grs">Second</div>
+                <div class="grs">Third</div>
+                <div class="grs">Fourth</div>
+            </div>
+            <div class="gr2">
+                <div class="re">First</div>
+                <div class="re">Second</div>
+            </div>
+        </div>
+        <div class="grey">
+            <div class="reds">First</div>
+            <div class="red">Second</div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
