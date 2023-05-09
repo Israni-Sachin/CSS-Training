@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            background-color: grey;
+        }
+
+        .main {
+            height: 90%;
+            width: 100%;
+            background-color: aqua;
+        }
+
+        img {
+            margin: 10px;
+            height: 270px;
+            border: 20px double red;
+            width: 190px;
+            cursor: pointer;
+        }
+
+        .image {
+            background-color: black;
+            margin-top: 30px;
+            margin-left: 5px;
+        }
+
+        /* .image:hover{
+            height: 350px;
+            width: 250px;
+            transition: 1s ease;
+        } */
+
+        h2 {
+            width: 95%;
+            height: 36px;
+            margin: 1px;
+            font-size: 16px;
+            background-color: grey;
+            border: 4px solid white;
+            cursor: default;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav {
+            height: 10%;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .one {
+            height: 100%;
+            width: 25%;
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 20px;
+        }
+
+        .two {
+            height: 100%;
+            width: 50%;
+            justify-content: space-around;
+        }
+
+        .all {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .three {
+            height: 100%;
+            width: 25%;
+            font-size: 20px;
+            margin-left: 40px;
+        }
+
+        .start {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .log {
+            height: 59%;
+            width: 35%;
+            background-color: rgba(0, 0, 0, .2);
+            margin-right: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav center">
+            <div class="one center">AVONE</div>
+            <div class="two center">
+                <div class="all center">HOME</div>
+                <div class="all center">SHOP</div>
+                <div class="all center">FEATURES</div>
+                <div class="all center">LOGBOOK</div>
+                <div class="all center">PAGES</div>
+                <div class="all center">BLOG</div>
+            </div>
+            <div class="three center">
+                <div class="log center">LOGIN</div>
+            </div>
+        </div>
+        <div class="main start">
+            <div class="center">
+                <div class="image"><img src="Man.jpg" alt="" class="center">
+                    <h2 class="center">Jacket <br> &nbsp;&nbsp;$500</h2>
+                </div>
+                <div class="image"><img src="Man2.jpg" alt="" class="center">
+                    <h2 class="center">Sunglass <br> &nbsp;&nbsp;&nbsp;$100</h2>
+                </div>
+                <div class="image"><img src="Man3.jpg" alt="" class="center">
+                    <h2 class="center">Full Suit <br>&nbsp;&nbsp; $2500</h2>
+                </div>
+                <div class="image"><img src="Manis.jpg" alt="" class="center">
+                    <h2 class="center">Shirt <br> $300</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

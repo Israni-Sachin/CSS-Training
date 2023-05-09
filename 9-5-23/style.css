@@ -1,0 +1,39 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 90%;
+    width: 90%;
+    display: flex;
+}
+
+.h50 {
+    height: 50%;
+}
+
+.w33 {
+    height: 100%;
+    width: 33.33%;
+}
+
+.one {
+    background-color: red;
+}
+
+.col {
+    background-color: goldenrod;
+}
+
+.col2 {
+    background-color: aqua;
+}
