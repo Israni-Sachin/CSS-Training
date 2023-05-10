@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .cont {
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+        }
+
+        .up {
+            height: 50%;
+            width: 100%;
+        }
+
+        .low {
+            height: 50%;
+            width: 100%;
+        }
+
+        .left {
+            height: 100%;
+            width: 50%;
+        }
+
+        .left1 {
+            height: 100%;
+            width: 50%;
+            background-color: white;
+        }
+
+        .left2 {
+            height: 100%;
+            width: 50%;
+            background-color: rgb(153, 153, 153);
+        }
+
+        .right {
+            height: 100%;
+            width: 50%;
+        }
+
+        .right1 {
+            height: 100%;
+            width: 50%;
+            background-color: rgb(156, 2, 2);
+        }
+
+        .right2 {
+            height: 100%;
+            width: 50%;
+            background-color: red;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cir {
+            position: absolute;
+            height: 50%;
+            width: 25%;
+            border-radius: 50%;
+            background-color: rgb(63, 0, 0);
+        }
+
+        .blue {
+            background-color: rgb(77, 77, 214);
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .dark {
+            background-color: rgb(156, 2, 2);
+        }
+
+        .whi {
+            background-color: rgb(153, 153, 153);
+        }
+
+        .white {
+            background-color: white;
+        }
+
+        .aqua{
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="main">
+            <div class="up center">
+                <div class="left center">
+                    <div class="left1"></div>
+                    <div class="left2"></div>
+                    <div class="cir"></div>
+                </div>
+                <div class="right center">
+                    <div class="right1"></div>
+                    <div class="right2"></div>
+                    <div class="cir blue"></div>
+                </div>
+            </div>
+            <div class="low center">
+                <div class="left center">
+                    <div class="left1 red"></div>
+                    <div class="left2 dark"></div>
+                </div>
+                <div class="right center">
+                    <div class="right1 whi"></div>
+                    <div class="right2 white">
+                    </div>
+                </div>
+                <div class="cir aqua"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -20,27 +20,23 @@
         .container {
             height: 100%;
             width: 100%;
-            background-color: grey;
         }
 
         .main {
             height: 90%;
             width: 100%;
-            background-color: aqua;
         }
 
-        img {
-            margin: 10px;
-            height: 270px;
-            border: 20px double red;
-            width: 190px;
-            cursor: pointer;
+        .red {
+            width: 85%;
+            height: 100%;
         }
 
         .image {
-            background-color: black;
-            margin-top: 30px;
-            margin-left: 5px;
+            height: 60%;
+            width: 100%;
+            background-color: red;
+
         }
 
         /* .image:hover{
@@ -67,35 +63,32 @@
 
         .nav {
             height: 10%;
-            width: 100%;
+            width: 85%;
+            margin-inline: auto;
+            display: flex;
+            align-items: center;
             justify-content: space-between;
         }
 
         .one {
-            height: 100%;
-            width: 25%;
             font-size: 20px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin-left: 20px;
         }
 
         .two {
-            height: 100%;
             width: 50%;
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
         .all {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
         }
 
         .three {
-            height: 100%;
-            width: 25%;
+            width: 9%;
             font-size: 20px;
-            margin-left: 40px;
         }
 
         .start {
@@ -105,18 +98,32 @@
         }
 
         .log {
-            height: 59%;
-            width: 35%;
             background-color: rgba(0, 0, 0, .2);
-            margin-right: 70px;
+        }
+
+        .space {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ali {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .w25{
+            height: 100%;
+            width: 100%;
+            justify-content: space-between;
         }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="nav center">
-            <div class="one center">AVONE</div>
+        <div class="nav">
+            <div class="one">AVONE</div>
             <div class="two center">
                 <div class="all center">HOME</div>
                 <div class="all center">SHOP</div>
@@ -125,23 +132,31 @@
                 <div class="all center">PAGES</div>
                 <div class="all center">BLOG</div>
             </div>
-            <div class="three center">
+            <div class="three">
                 <div class="log center">LOGIN</div>
             </div>
         </div>
         <div class="main start">
-            <div class="center">
-                <div class="image"><img src="Man.jpg" alt="" class="center">
-                    <h2 class="center">Jacket <br> &nbsp;&nbsp;$500</h2>
+            <div class="red ali">
+                <div class="w25">
+                <div class="image">
                 </div>
-                <div class="image"><img src="Man2.jpg" alt="" class="center">
-                    <h2 class="center">Sunglass <br> &nbsp;&nbsp;&nbsp;$100</h2>
+                <div class="h2">Sachin</div>
                 </div>
-                <div class="image"><img src="Man3.jpg" alt="" class="center">
-                    <h2 class="center">Full Suit <br>&nbsp;&nbsp; $2500</h2>
+                <div class="w25">
+                <div class="image">
                 </div>
-                <div class="image"><img src="Manis.jpg" alt="" class="center">
-                    <h2 class="center">Shirt <br> $300</h2>
+                <div class="h2">Sachin</div>
+                </div>
+                <div class="w25">
+                <div class="image">
+                </div>
+                <div class="h2">Sachin</div>
+                </div>
+                <div class="w25">
+                <div class="image">
+                </div>
+                <div class="h2">Sachin</div>
                 </div>
             </div>
         </div>
