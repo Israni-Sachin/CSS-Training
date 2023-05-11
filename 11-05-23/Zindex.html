@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .cont {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: aqua;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+        }
+        .main2 {
+            width: 100%;
+            height: 33.33%;
+            display: flex;
+        }
+        .main1 {
+            width: 100%;
+            height: 33.33%;
+            display: flex;
+        }
+        .main3 {
+            width: 100%;
+            height: 33.33%;
+            position: relative;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .one1 {
+            width: 10%;
+            height: 20%;
+            background-color: red;
+            position: fixed;
+        }
+
+        .one2 {
+            width: 10%;
+            height: 20%;
+            background-color: green;
+            position: fixed;
+            right: 0;
+        }
+
+        .one3 {
+            width: 10%;
+            height: 20%;
+            background-color: red;
+            position: fixed;
+            bottom: 0;
+        }
+
+        .one4 {
+            width: 10%;
+            height: 20%;
+            background-color: green;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+        .one5 {
+            width: 10%;
+            height: 20%;
+            background-color: green;
+            position: fixed;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="main">
+            <div class="main1">
+            <div class="one1"></div>
+            <div class="one2"></div>
+        </div>
+        <div class="main3">
+            <div class="one5"></div>
+        </div>
+            <div class="main2">
+                <div class="one3"></div>
+                <div class="one4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

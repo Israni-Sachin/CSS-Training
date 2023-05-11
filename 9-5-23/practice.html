@@ -20,6 +20,9 @@
         .container {
             height: 100%;
             width: 100%;
+            display: flex;
+            flex-direction: column ;
+            align-items: center;
         }
 
         .main {
@@ -29,11 +32,13 @@
 
         .red {
             width: 85%;
-            height: 100%;
+            height: 60%;
+            display: flex;
+            justify-content: space-between;
         }
 
         .image {
-            height: 60%;
+            height: 100%;
             width: 100%;
             background-color: red;
 
@@ -45,13 +50,11 @@
             transition: 1s ease;
         } */
 
-        h2 {
-            width: 95%;
+        .h2 {
+            width: 100%;
             height: 36px;
-            margin: 1px;
             font-size: 16px;
             background-color: grey;
-            border: 4px solid white;
             cursor: default;
         }
 
@@ -109,13 +112,10 @@
 
         .ali {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
         }
         .w25{
             height: 100%;
-            width: 100%;
-            justify-content: space-between;
+            width: 24%;
         }
     </style>
 </head>
@@ -136,31 +136,29 @@
                 <div class="log center">LOGIN</div>
             </div>
         </div>
-        <div class="main start">
-            <div class="red ali">
+            <div class="red">
                 <div class="w25">
                 <div class="image">
                 </div>
-                <div class="h2">Sachin</div>
-                </div>
-                <div class="w25">
-                <div class="image">
-                </div>
-                <div class="h2">Sachin</div>
+                <div class="h2 center">Sachin</div>
                 </div>
                 <div class="w25">
                 <div class="image">
                 </div>
-                <div class="h2">Sachin</div>
+                <div class="h2 center">Sachin</div>
                 </div>
                 <div class="w25">
                 <div class="image">
                 </div>
-                <div class="h2">Sachin</div>
+                <div class="h2 center">Sachin</div>
+                </div>
+                <div class="w25">
+                <div class="image">
+                </div>
+                <div class="h2 center">Sachin</div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
