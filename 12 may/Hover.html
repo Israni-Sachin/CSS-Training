@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIG ZAG HOVER</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            position: relative;
+            padding-block: 5%;
+            padding-inline: 10%;
+            font-size: 50px;
+            border: none;
+            background-color:aqua ;
+            /* overflow: hidden; */
+        }
+
+        /* BOTTOM */
+
+        button::before {
+            position: absolute;
+            top: -22%;
+            left: 0%;
+            height: 10%;
+            width: 100%;
+            content: "";
+            border-bottom: 5px solid;
+            transition: 1s;
+        }
+
+        /* BOTTOM HOVER*/
+
+        button:hover::before {
+            position: absolute;
+            top: 0%;
+            right: 0%;
+            height: 100%;
+            width: 100%;
+            content: "";
+            border-bottom: 5px solid;
+            border-radius:100%;
+        }
+
+        /* TOP */
+        button::after {
+            position: absolute;
+            top: 108%;
+            left: 0%;
+            width: 100%;
+            content: "";
+            border-top: 5px solid;
+            transition: 1s;
+        }
+
+        /* TOP HOVER */
+
+        button:hover::after {
+            position: absolute;
+            top: 0%;
+            height: 100%;
+            width: 100%;
+            content: "";
+            border-top: 5px solid;
+            border-radius:100%;
+        }
+    </style>
+</head>
+
+<body>
+    <button>HOVER ME</button>
+</body>
+</html>

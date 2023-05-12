@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Hover</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            position: relative;
+            padding-block: 5%;
+            padding-inline: 15%;
+            background-color: aqua;
+            font-size: large;
+            border: none;
+            overflow: hidden;
+        }
+        span{
+            background-color: red;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0%;
+            top: 100%;
+            /* overflow: hidden; */
+        }
+        /* RIGHT */
+
+        button::before {
+            position: absolute;
+            top: -1%;
+            left: -1%;
+            height: 0%;
+            width: 100%;
+            content: "";
+            border-right: 5px solid;
+            transition: .7s;
+        }
+
+        /* RIGHT HOVER*/
+
+        button:hover::before {
+            position: absolute;
+            top:0%;
+            height: 100%;
+            width: 100%;
+            content: "";
+            border-right: 5px solid;
+        }
+
+        /* TOP */
+        button::after {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            height: 100%;
+            width: 0%;
+            content: "";
+            border-top: 5px solid;
+            transition: .7s;
+        }
+
+        /* TOP HOVER */
+
+        button:hover::after {
+            position: absolute;
+            top: 0%;
+            height: 100%;
+            width: 100%;
+            content: "";
+            border-top: 5px solid;
+        }
+
+        /* top */
+
+        button>span::before {
+            position: absolute;
+            top: -3%;
+            left: 100%;
+            height: 100%;
+            width: 100%;
+            content: "";
+            border-top: 5px solid;
+            transition: .7s;
+        }
+
+        /* top HOVER*/
+
+        button:hover>span::before {
+            position: absolute;
+            top: -3%;
+            left: 0%;
+            width: 100%;
+            content: "";
+            border-top: 5px solid;
+        }
+        /* left */
+
+        button>span::after {
+            position: absolute;
+            top: 100%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+            content: "";
+            border-left: 5px solid;
+            transition: .7s;
+        }
+
+        /* left HOVER*/
+
+        button:hover>span::after {
+            position: absolute;
+            top:-100%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+            content: "";
+            border-left: 5px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <button>HOVER <span></span></button>
+</body>
+
+</html>

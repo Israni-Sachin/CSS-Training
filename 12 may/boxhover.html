@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div{
+            background-color: black;
+            color: red;
+            padding-inline: 70px;
+            padding-block: 40px;
+            font-size: xx-large;
+            transition: 1s;
+        }
+        .box:hover{
+            color: white;
+            background-color: red;
+             box-shadow:20px 10px 100px  red;
+             border: 2px solid red;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box border">Span</div>
+</body>
+
+</html>
