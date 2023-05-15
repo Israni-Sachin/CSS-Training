@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Images</title>
+    <style>
+        img {
+            width: 400px;
+        }
+
+        div {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        h2{
+            text-align: center;
+        }
+        .hover{
+            width: 400px;
+            transition: 2s;
+        }
+        .hover:hover{
+            width: 500px;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Opacity / Transparance</h2>
+        <img src="namah.jpg" alt="" style="margin: auto;display: block;opacity: 50%;"><hr>
+        <h2>Border radius</h2>
+        <img src="namah.jpg" alt="" style="border-radius: 50%;">
+        <img src="namah.jpg" alt="" style="border-radius: 50px"><hr>
+        <h2 class="ho">Center With Hover</h2>
+        <img src="namah.jpg" alt="" class="hover" style="margin: auto;display: block;">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background: url(Mahadev.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: 40%;
+            width: 40%;
+            border: 2px solid red ;
+        }
+        .hw100{
+            height: 100%;
+            width: 100%;
+        }
+        .none{
+            object-fit: none;
+        }
+        .contain{
+            object-fit: contain;
+        }
+        .cover{
+            object-fit: cover;
+        }
+        .scale{
+            object-fit: scale-down;
+        }
+        h2{
+            color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"><img src="namah.jpg" class="contain hw100" alt=""><h2>Contain</h2></div>
+    <div class="box"><img src="namah.jpg" class="None hw100" alt=""><h2>None</h2></div>
+    <div class="box"><img src="namah.jpg" class="cover hw100" alt=""><h2>Cover</h2></div>
+    <div class="box"><img src="namah.jpg" class="scale hw100" alt=""><h2>Scale</h2></div>
+</body>
+</html>
