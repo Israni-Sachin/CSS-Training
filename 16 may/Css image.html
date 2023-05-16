@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposive Images</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            height: 100%;
+            min-width: 200px;
+            max-width: 100%;
+        }
+
+        .img {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 100px;
+            background-color: aqua;
+            box-shadow: 0 0 30px 80px red;
+            gap: 10px;
+        }
+
+        img {
+            width: 48%;
+            /* height: auto; */
+        }
+
+        nav {
+            background-color: blue;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin-inline: 0px;
+            background-color: red;
+        }
+
+        footer {
+            background-color: yellow;
+            color: cadetblue;
+            padding: 10px;
+            text-align: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Blog</a>
+        <a href="#">Products</a>
+        <a href="#">Orders</a>
+    </nav>
+    <div class="img">
+        <img src="namah.jpg" alt="">
+        <img src="namah.jpg" alt="">
+        <img src="namah.jpg" alt="">
+        <img src="namah.jpg" alt="">
+    </div>
+    <footer>@SACHINISRANI</footer>
+</body>
+
+</html>
