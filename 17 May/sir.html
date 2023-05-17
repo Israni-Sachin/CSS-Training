@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sir Technique</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        header {
+            max-width: 1400px;
+            background-color: rgb(255, 245, 245);
+            padding: 10px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            padding-inline-end: 10px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            padding-inline: 10px;
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .dis {
+            pointer-events: none;
+            opacity: .5;
+        }
+
+        #srch {
+            padding: 2px;
+            border-radius: 2px solid;
+        }
+
+        .button {
+            border: 2px solid green;
+            color: green;
+            padding: 2px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .main {
+            max-width: 900px;
+            margin-inline: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .card {
+            width: 49%;
+            border: 2px solid;
+            border-radius: 10px;
+            /* overflow: hidden; */
+        }
+
+        img {
+            width: 100%;
+            border-radius: 7px 7px 0 0;
+        }
+
+        .content {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .foot1 {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: aqua;
+        }
+
+        .foot2 {
+            padding: 10px;
+            background-color: rgb(255, 217, 0);
+            text-align: center;
+        }
+
+        .but {
+            background-color: blue;
+            color: white;
+            padding: 2px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="navbar">
+                <div class="logo">
+                    <h4>Navbar</h4>
+                </div>
+                <ul class="navlist">
+                    <li class="navitem"><a href="#">Home</a></li>
+                    <li class="navitem"><a href="#">Link</a></li>
+                    <li class="navitem"><a href="#" class="dis">Disabled</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" name="Search" id="srch" placeholder="Search">
+                <button class="button">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="card">
+            <img src="https://source.unsplash.com/900x300/?nature,rain" alt="">
+            <div class="content">
+                <h4>Card Title</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus id, quis expedita sequi deserunt
+                    voluptas dolor facere quia architecto laborum odit enim? Reprehenderit nemo assumenda officia
+                    provident et debitis culpa?</p>
+                <button class="but">Go somewhere</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/900x300/?nature,rain" alt="">
+            <div class="content">
+                <h4>Card Title</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus id, quis expedita sequi deserunt
+                    voluptas dolor facere quia architecto laborum odit enim? Reprehenderit nemo assumenda officia
+                    provident et debitis culpa?</p>
+                <button class="but">Go somewhere</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/900x300/?nature,rain" alt="">
+            <div class="content">
+                <h4>Card Title</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus id, quis expedita sequi deserunt
+                    voluptas dolor facere quia architecto laborum odit enim? Reprehenderit nemo assumenda officia
+                    provident et debitis culpa?</p>
+                <button class="but">Go somewhere</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/900x300/?nature,rain" alt="">
+            <div class="content">
+                <h4>Card Title</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus id, quis expedita sequi deserunt
+                    voluptas dolor facere quia architecto laborum odit enim? Reprehenderit nemo assumenda officia
+                    provident et debitis culpa?</p>
+                <button class="but">Go somewhere</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot1">Home</div>
+        <div class="foot2">© 2022 Company, Inc</div>
+    </footer>
+</body>
+
+</html>
