@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Before After</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            background-color: aliceblue;
+        }
+
+        .con {
+            padding-block: 50px;
+        }
+
+        .main {
+            max-width: 900px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .image {
+            width: 33%;
+            position: relative;
+        }
+
+        .imgmain {
+            display: flex;
+            gap: 20px;
+        }
+
+        .img::before {
+            content: "4 FEB";
+            position: absolute;
+            color: white;
+            background-color: darkblue;
+            padding: 5px;
+            top: 5%;
+            left: 0;
+        }
+
+        .read {
+            position: absolute;
+            background-color: white;
+            border-radius: 5px;
+            width: 80%;
+            top: 90%;
+            left: 7%;
+            padding: 10px;
+            box-shadow: 0 0 10px 1px rgb(84, 83, 83);
+        }
+
+        button {
+            background-color: white;
+            border: none;
+            color: red;
+            padding-block-start: 10px;
+        }
+
+        p,
+        h4 {
+            padding-block: 10px;
+        }
+        h4{
+            color: darkblue;
+        }
+        i {
+            padding-inline: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="main">
+            <div class="content">
+                <h2>Latest News</h2>
+                <p>I design and develop services for customers of all sizes, specializing in creating modern websites
+                </p>
+            </div>
+            <div class="imgmain">
+                <div class="image">
+                    <div class="img"><img src="Plane.jpg" alt=""></div>
+                    <div class="read">
+                        <h4>Prevent 75% of visitors From google analytics</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus saepe distinctio
+                            placeat fuga.</p>
+                        <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <div class="img"><img src="Plane.jpg" alt=""></div>
+                    <div class="read">
+                        <h4>Prevent 75% of visitors From google analytics</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus saepe distinctio
+                            placeat fuga.</p>
+                        <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="image">
+                    <div class="img"><img src="Plane.jpg" alt=""></div>
+                    <div class="read">
+                        <h4>Prevent 75% of visitors From google analytics</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit delectus saepe distinctio
+                            placeat fuga.</p>
+                        <button>Read More <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
