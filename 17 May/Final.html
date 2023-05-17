@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo adjustment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /*  flex,position,padding ,height , width */
+        .cont {
+            height: 100%;
+            width: 100%;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        .right {
+            width: 50%;
+        }
+
+        .up {
+            width: 50%;
+            height: 100%;
+            flex-wrap: wrap;
+        }
+
+        .one {
+            position: relative;
+            width: 49%;
+        }
+
+        .two {
+            width: 49%;
+            position: relative;
+        }
+
+        .center {
+            display: flex;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .gap {
+            gap: 5px;
+        }
+
+        .lar {
+            position: relative;
+            bottom: 180px;
+            color: white;
+            padding: 10px;
+        }
+
+        .larg {
+            position: absolute;
+            color: white;
+            padding-left: 20px;
+            bottom: 10px;
+        }
+
+        p {
+            font-size: 30px;
+            padding-block: 20px;
+        }
+
+        button {
+            color: white;
+            background-color: blue;
+            padding: 5px;
+        }
+
+        .mix {
+            padding-block: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont center">
+        <div class="main center gap">
+            <div class="right"><img src="Plane.jpg" alt="" class="">
+                <div class="lar">
+                    <button>Friends</button>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+                    <div>John Doe - Apr 28,2017</div>
+                </div>
+            </div>
+            <div class="up center gap">
+
+                <div class="one center"><img src="Plane.jpg" alt="" class="image">
+                    <div class="larg">
+                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, rem.</article>
+                        <div>Apr 28,2017</div>
+                    </div>
+                </div>
+
+                <div class="two center"><img src="Plane.jpg" alt="" class="image">
+                    <div class="larg">
+                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, rem.</article>
+                        <div>Apr 28,2017</div>
+                    </div>
+                </div>
+
+                <div class="two center"><img src="Plane.jpg" alt="" class="image">
+                    <div class="larg">
+                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, rem.</article>
+                        <div>Apr 28,2017</div>
+                    </div>
+                </div>
+
+                <div class="one center"><img src="Plane.jpg" alt="" class="image">
+                    <div class="larg">
+                        <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, rem.</article>
+                        <div>Apr 28,2017</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
