@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(138, 119, 247);
+        }
+
+        .boxes {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: auto;
+            width: 70%;
+        }
+
+        .boxes .box:nth-child(even) {
+            align-self: flex-end;
+            text-align: left;
+        }
+
+        .box {
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            background-color: rgb(142, 123, 248);
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: right;
+            box-shadow: 10px 10px 2px 0 white;
+            position: relative;
+            margin: 20px;
+        }
+
+        .num,
+        .p {
+            color: #fff;
+        }
+
+        .dot {
+            width: 20px;
+            border-radius: 50%;
+            top: 50%;
+            right: -15%;
+            box-shadow: 0 0 11px 1px white;
+            background-color: #fff;
+            height: 20px;
+            position: absolute;
+        }
+
+        .left {
+            left: -15%;
+        }
+
+        @media only screen and (max-width:800px) {
+            .dot {
+                display: none;
+            }
+
+            .box {
+                width: 80%;
+                text-align: left;
+            }
+
+            .boxes {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+
+            .boxes .box:nth-child(even) {
+                align-self: flex-start;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .boxes .box .p {
+                display: none;
+            }
+
+            .dot {
+                display: block;
+                left: -15%;
+            }
+        }
+
+        @media only screen and (max-width:400px) {
+            .boxes .box {
+                width: 60%;
+                margin-inline: auto;
+                font-size: 10px;
+            }
+
+            .dot {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width:300px) {
+            .boxes .box {
+                width: 40%;
+                font-size: 7px;
+                background-color: cadetblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">
+            <div class="dot"></div>
+            <div class="num">01</div>
+            <div class="h2">Resources</div>
+            <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore cum repellat sit
+                veritatis
+                fugiat.</div>
+        </div>
+
+        <div class="box">
+            <div class="dot left"></div>
+            <div class="num">02</div>
+            <div class="h2">Project Manager</div>
+            <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore cum repellat sit
+                veritatis
+                fugiat.
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="dot"></div>
+            <div class="num">03</div>
+            <div class="h2">Quality Assurance</div>
+            <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore cum repellat sit
+                veritatis
+                fugiat.</div>
+        </div>
+
+        <div class="box">
+            <div class="dot left"></div>
+            <div class="num">04</div>
+            <div class="h2">Support Team</div>
+            <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore cum repellat sit
+                veritatis
+                fugiat.</div>
+        </div>
+
+        <div class="box">
+            <div class="dot"></div>
+            <div class="num">05</div>
+            <div class="h2">Dedication</div>
+            <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore cum repellat sit
+                veritatis
+                fugiat.</div>
+        </div>
+
+        <div class="box">
+            <div class="dot left"></div>
+            <div class="num">06</div>
+            <div class="h2">Perfection</div>
+            <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore cum repellat sit
+                veritatis
+                fugiat.</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
