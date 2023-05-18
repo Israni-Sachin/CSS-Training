@@ -11,21 +11,66 @@
             margin: 0;
             padding: 0;
         }
-        .main{
+
+        .main {
             display: flex;
             flex-wrap: wrap;
             max-width: 1300px;
         }
+
         .shoes {
             width: 19.8%;
             border: 1px solid;
+            position: relative;
         }
 
         img {
             width: 100%;
         }
-        .h5{
+
+        .h5 {
             padding: 10px;
+        }
+
+        .center {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sold {
+            height: 15%;
+            width: 20%;
+            background-color: rgba(0, 0, 0, .3);
+            color: white;
+            font-size: small;
+            border-radius: 50%;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+        }
+
+        .minus {
+            height: 15%;
+            width: 18%;
+            background-color: rgb(246, 65, 65);
+            color: white;
+            font-size: small;
+            border-radius: 50%;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+        }
+
+        p {
+            font-size: small;
+        }
+
+        ins {
+            text-decoration: none;
+            color: red;
+            padding-inline: 5px;
         }
     </style>
 </head>
@@ -34,53 +79,75 @@
     <div class="main">
         <div class="shoes">
             <img src="Shoes.webp" alt="">
-            <div class="h5"><h5>Adidas Copa Primeknit Sneakers</h5>
-            <p>$289.00</p></div>
+            <div class="sold center">Sold out</div>
+            <div class="h5">
+                <h5>Adidas Copa Primeknit Sneakers</h5>
+                <p>$289.00</p>
+            </div>
         </div>
         <div class="shoes">
             <img src="Shoes.webp" alt="">
-            <div class="h5"><h5>Adidas Copa Primeknit Sneakers</h5>
-            <p>$289.00</p></div>
+            <div class="h5">
+                <h5>Adidas Copa Primeknit Sneakers</h5>
+                <p>$289.00</p>
+            </div>
         </div>
         <div class="shoes">
             <img src="Shoes.webp" alt="">
-           <div class="h5"> <h5>Adidas Copa Primeknit Sneakers</h5>
-            <p>$289.00</p></div>
+            <div class="h5">
+                <h5>Adidas Copa Primeknit Sneakers</h5>
+                <p>$289.00</p>
+            </div>
         </div>
         <div class="shoes">
             <img src="Shoes.webp" alt="">
-            <div class="h5"><h5>Adidas Copa Primeknit Sneakers</h5>
-            <p>$289.00</p></div>
+            <div class="h5">
+                <h5>Adidas Copa Primeknit Sneakers</h5>
+                <p>$289.00</p>
+            </div>
         </div>
         <div class="shoes">
             <img src="Shoes.webp" alt="">
-            <div class="h5"><h5>Adidas Copa Primeknit Sneakers</h5>
-            <p>$289.00</p></div>
+            <div class="h5">
+                <h5>Adidas Copa Primeknit Sneakers</h5>
+                <p>$289.00</p>
+            </div>
         </div>
         <div class="shoes">
             <img src="Shoes.webp" alt="">
-           <div class="h5"> <h5>Adidas Copa Primeknit Sneakers</h5>
-            <p>$289.00</p></div>
+            <div class="h5">
+                <h5>Adidas Copa Primeknit Sneakers</h5>
+                <p>$289.00</p>
+            </div>
         </div>
         <div class="shoes">
             <img src="Shoes.webp" alt="">
-            <div class="h5"><h5>Adidas Copa Primeknit Sneakers</h5>
-            <p>$289.00</p></div>
+            <div class="h5">
+                <h5>Adidas Copa Primeknit Sneakers</h5>
+                <p>$289.00</p>
+            </div>
         </div>
         <div class="shoes">
             <img src="Shoes.webp" alt="">
-            <div class="h5"><h5>Adidas Copa Primeknit Sneakers</h5>
-            <p>$289.00</p></div>
+            <div class="h5">
+                <h5>Adidas Copa Primeknit Sneakers</h5>
+                <p>$289.00</p>
+            </div>
         </div>
         <div class="shoes">
             <img src="Shoes.webp" alt="">
-           <div class="h5"> <h5>Adidas Copa Primeknit Sneakers</h5>
-            <p>$289.00</p></div>
+            <div class="h5">
+                <h5>Adidas Copa Primeknit Sneakers</h5>
+                <p>$289.00</p>
+            </div>
         </div>
         <div class="shoes">
+            <div class="minus center">-15%</div>
             <img src="Shoes.webp" alt="">
-           <div class="h5"> <h5>Adidas Copa Primeknit Sneakers</h5>
-            <p>$289.00</p></div>
+            <div class="h5">
+                <h5>Adidas Copa Primeknit Sneakers</h5>
+                <p><del> $289.00 </del> <ins>$188.00</ins> </p>
+            </div>
         </div>
     </div>
 </body>
