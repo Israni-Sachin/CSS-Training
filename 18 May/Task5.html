@@ -17,10 +17,16 @@
         }
 
         .boxes {
-            /* display: flex;
-            flex-wrap: wrap; */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
             margin: auto;
-            max-width: 900px;
+            width: 70%;
+        }
+
+        .boxes .box:nth-child(even){
+            align-self: flex-end;
+            text-align: left;
         }
 
         .box {
@@ -32,23 +38,10 @@
             border: 2px solid;
             border-radius: 10px;
             padding: 10px;
-            direction: rtl;
+            text-align: right;
             box-shadow: 10px 10px 2px 0 white;
             position: relative;
             margin: 20px;
-        }
-
-        .right {
-            /* position: absolute;
-            left: 39%;
-            top: 25%; */
-            position: relative;
-            left: 57%;
-            direction: ltr;
-        }
-        
-        .right>.dot {
-            left: -15%;
         }
 
         .num,
@@ -66,6 +59,9 @@
             height: 20px;
             position: absolute;
         }
+        .left{
+            left: -15%;
+        }
     </style>
 </head>
 
@@ -79,8 +75,9 @@
                 veritatis
                 fugiat.</div>
         </div>
-        <div class="box right">
-            <div class="dot"></div>
+
+        <div class="box">
+            <div class="dot left"></div>
             <div class="num">02</div>
             <div class="h2">Resources</div>
             <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore cum repellat sit
@@ -97,14 +94,16 @@
                 veritatis
                 fugiat.</div>
         </div>
-        <div class="box right">
-            <div class="dot"></div>
+
+        <div class="box">
+            <div class="dot left"></div>
             <div class="num">04</div>
             <div class="h2">Resources</div>
             <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore cum repellat sit
                 veritatis
                 fugiat.</div>
         </div>
+
         <div class="box">
             <div class="dot"></div>
             <div class="num">05</div>
@@ -113,8 +112,9 @@
                 veritatis
                 fugiat.</div>
         </div>
-        <div class="box right">
-            <div class="dot"></div>
+
+        <div class="box">
+            <div class="dot left"></div>
             <div class="num">06</div>
             <div class="h2">Resources</div>
             <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolore cum repellat sit
