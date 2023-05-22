@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Task 7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: black;
+            color: aliceblue;
+        }
+
+        header {
+            margin: auto;
+            padding-block: 10px;
+            border-bottom: 1px solid rgb(83, 82, 82);
+        }
+
+        .main {
+            padding-inline: 100px;
+        }
+
+        .call {
+            text-align: end;
+        }
+
+        .srch {
+            position: relative;
+        }
+
+        #search {
+            padding: 10px;
+            padding-inline-end: 320px;
+        }
+
+        button {
+            position: absolute;
+            padding: 8px;
+            top: 10%;
+            left: 84%;
+            color: white;
+            border: none;
+            background-color: grey;
+        }
+
+        .center {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content,
+        .cust,
+        .company {
+            margin-block: 20px;
+        }
+
+        .content {
+            width: 25%;
+        }
+
+        .company {
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .cust {
+            width: 50%;
+        }
+
+        li {
+            list-style-type: none;
+            padding-block: 10px;
+        }
+
+        .flex {
+            display: inline-flex;
+            gap: 10px;
+        }
+
+        footer {
+            color: aliceblue;
+            text-align: center;
+            border-top: 1px solid rgb(41, 41, 41);
+            padding: 10px;
+        }
+
+        .second {
+            gap: 35px;
+            padding-block: 50px;
+        }
+
+        .one>h3 {
+            padding-block: 20px;
+        }
+
+        img {
+            width: 35%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header class="center">
+            <div class="sign">
+                <h3>Sign up to Get Latest <br> Updates</h3>
+            </div>
+            <div class="srch">
+                <input type="text" id="search" placeholder="you@yoursite.com"><button>Subscribe</button>
+            </div>
+            <div class="call">
+                <p>Call Us On</p>
+                <h2>1-800-222-000</h2>
+            </div>
+        </header>
+        <div class="second center">
+            <div class="content">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quas maiores.</p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="cust center">
+                <div class="one">
+                    <h3>Customer</h3>
+                    <ul>
+                        <li>Get Corpo</li>
+                        <li>Documentation</li>
+                        <li>Help Center</li>
+                        <li>Pricing</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div class="one">
+                    <h3>Customer</h3>
+                    <ul>
+                        <li>Get Corpo</li>
+                        <li>Documentation</li>
+                        <li>Help Center</li>
+                        <li>Pricing</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div class="one">
+                    <h3>Customer</h3>
+                    <ul>
+                        <li>Get Corpo</li>
+                        <li>Documentation</li>
+                        <li>Help Center</li>
+                        <li>Pricing</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="company">
+                <h2>Company</h2>
+                <div class="flex">
+                    <img src="Boy.avif" alt="">
+                    <div class="date">
+                        <h5>29 March 2021</h5>
+                        <p>Markdown Language</p>
+                        <p>Sample Blog Post Styling</p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <img src="girl.avif" alt="">
+                    <div class="date">
+                        <h5>29 March 2021</h5>
+                        <p>Markdown Language</p>
+                        <p>Sample Blog Post Styling</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>© 2021 copyright pxdraft</footer>
+</body>
+
+</html>
