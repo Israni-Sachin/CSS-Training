@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Task 12</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .cont {
+            padding-inline: 1%;
+            background-color: rgb(202, 200, 200);
+            padding-block: 1%;
+        }
+
+        .main {
+            border: 1px solid;
+            background-color: #fff;
+            display: flex;
+        }
+
+        .left {
+            width: 25%;
+            padding-inline: 10px;
+        }
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            padding-inline: 50px;
+            gap: 10px;
+        }
+
+        .but {
+            display: flex;
+            gap: 5px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .but button {
+            background-color: green;
+            border: none;
+            color: white;
+            padding-inline: 10px;
+            padding-block: 5px;
+            border-radius: 3px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .img {
+            width: 50%;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        hr {
+            margin-block: 10px;
+        }
+
+        .center {
+            padding-block: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .skill {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: small;
+            font-weight: 700;
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .st {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .st a {
+            color: blue;
+        }
+
+        .bottom button {
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 2px;
+            padding-block: 5px;
+        }
+
+        .right {
+            width: 75%;
+            padding: 10px;
+        }
+
+        .right hr {
+            margin-block: 15px;
+        }
+
+        .But button:first-child {
+            color: blue;
+            background-color: #fff;
+            border: none;
+            border-radius: 2px;
+            padding: 5px;
+            font-size: smaller;
+        }
+
+        .But button:last-child {
+            background-color: blue;
+            color: #fff;
+            border: none;
+            border-radius: 2px;
+            padding: 5px;
+            font-size: smaller;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .in {
+            gap: 25px;
+            font-size: 14px;
+        }
+
+        .in i {
+            padding-inline: 5px;
+            font-size: 14px;
+        }
+
+        .in a {
+            color: rgb(100, 100, 100);
+        }
+
+        .in div:nth-child(2) a {
+            color: blue;
+        }
+
+        .pic {
+            width: 4%;
+        }
+
+        .one {
+            gap: 20px;
+        }
+        .cent {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .h4 {
+            gap: 20px;
+        }
+
+        .h4 p {
+            font-size: 13px;
+            opacity: .7;
+        }
+        .w60{
+            width: 90%;
+            text-align: left;
+        }
+        .fav{
+            font-size: 10px;
+            gap: 10px;
+            opacity: .7;
+        }
+        .image{
+            width: 100px;
+        }
+        .image img{
+            border-radius: 2px;
+        }
+        .image2{
+            width: 225px;
+            height: 225px;
+        }
+        .image2 img{
+            border-radius: 2px;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="main">
+            <div class="left">
+                <div class="top">
+                    <div class="img"><img src="Boy.avif" alt=""></div>
+                    <h2>David Grey.H</h2>
+                    <h4>Canada</h4>
+                    <p>Bureau Oberhaeuser is a design bureau focused on Information and Interface Design</p>
+                    <div class="but">
+                        <button>Hire Me</button>
+                        <button>Follow</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="center">
+                    <div class="sk">Skills</div>
+                    <div class="skill">
+                        <div>Chalk</div>
+                        <div>Hand Lettering</div>
+                        <div>Information Design</div>
+                        <div>Graphic Design</div>
+                        <div>Web Design</div>
+                    </div>
+                </div>
+                <hr>
+                <br><br><br>
+                <hr>
+                <div class="bottom">
+                    <div class="st">
+                        <div>Status</div>
+                        <div>Active</div>
+                    </div>
+                    <div class="st">
+                        <div>Phone</div>
+                        <div>006 3435 22</div>
+                    </div>
+                    <div class="st">
+                        <div>Mail</div>
+                        <div>Jacod@testmail.com</div>
+                    </div>
+                    <div class="st">
+                        <div>Facebook</div>
+                        <div><a href="#">David Grey</a></div>
+                    </div>
+                    <div class="st">
+                        <div>Twitter</div>
+                        <div><a href="#">@davidgrey</a></div>
+                    </div>
+                    <button>Preview</button>
+                </div>
+            </div>
+            <div class="right">
+                <div class="But">
+                    <button>Message</button>
+                    <button>Request</button>
+                </div>
+                <hr>
+                <div class="in flex">
+                    <div><a href="#"><i class="fa-solid fa-user"></i>Info</a></div>
+                    <div><a href="#"><i class="fa-regular fa-newspaper"></i>Feed</a></div>
+                    <div><a href="#"><i class="fa-solid fa-calendar-days"></i>Agenda</a></div>
+                    <div><a href="#"><i class="fa-solid fa-paperclip"></i>Resume</a></div>
+                </div>
+                <hr>
+                <div class="one flex">
+                    <div class="pic"><img src="Boy.avif" alt=""></div>
+                    <div class="cent flex">
+                        <div class="h4 flex">
+                            <h4>Mason Beck</h4>
+                            <p><i class="fa-solid fa-clock"></i> 10 hours</p>
+                        </div>
+                        <p class="w60">There Is no better advertisement campaign that is low cost and also successful at the same time.</p>
+                        <div class="fav flex">
+                            <i class="fa-solid fa-star">4</i>
+                            <i class="fa-solid fa-message">11</i>
+                            <i class="fa-solid fa-reply"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="one flex">
+                    <div class="pic"><img src="Boy.avif" alt=""></div>
+                    <div class="cent flex">
+                        <div class="h4 flex">
+                            <h4>Willie Stanly</h4>
+                            <p><i class="fa-solid fa-clock"></i> 10 hours</p>
+                        </div>
+                        <div class="image"><img src="Boy.avif" alt=""></div>
+                        <div class="fav flex">
+                            <i class="fa-solid fa-star">4</i>
+                            <i class="fa-solid fa-message">11</i>
+                            <i class="fa-solid fa-reply"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="one flex">
+                    <div class="pic"><img src="Boy.avif" alt=""></div>
+                    <div class="cent flex">
+                        <div class="h4 flex">
+                            <h4>Willie Stanly</h4>
+                            <p><i class="fa-solid fa-clock"></i> 10 hours</p>
+                        </div>
+                        <p class="w60">When I first got into the online advertising business, I was looking for the magical combination that would put my website into the top search engine rankings.</p>
+                        <div class="image2"><img src="Boy.avif" alt=""></div>
+                        <div class="fav flex">
+                            <i class="fa-solid fa-star">4</i>
+                            <i class="fa-solid fa-message">11</i>
+                            <i class="fa-solid fa-reply"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
