@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Practice Website</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .main {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .web {
+            border: 1px solid;
+            border-radius: 10px;
+            height: 95%;
+            width: 99%;
+            display: flex;
+        }
+
+        .image img {
+            width: 15%;
+            padding-left: 5px;
+            padding-top: 15px;
+        }
+
+        .nav {
+            border-right: 1px solid;
+            width: 20%;
+            height: 100%;
+            padding-inline: 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            padding-left: 15px;
+        }
+
+        .list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .navlist {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            align-items: flex-start;
+        }
+
+        .navlist li {
+            padding-left: 5px;
+            list-style-type: none;
+        }
+
+        .navlist i {
+            padding-right: 10px;
+            opacity: .3;
+        }
+
+        .pur {
+            color: purple;
+        }
+
+        .co {
+            color: purple !important;
+        }
+
+        .navlist li:first-child {
+            background-color: rgba(0, 0, 0, .1);
+            border-radius: 2px;
+            width: 100%;
+            padding-left: 5px;
+        }
+        li{
+            padding-block: 10px;
+        }
+        li:hover{
+            background-color: rgba(0, 0, 0, .1);
+            border-radius: 2px;
+            width: 100%;
+            /* padding-block: 10px;
+            padding-left: 5px; */
+        }
+        .list a {
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            font-size: medium;
+        }
+
+        .yt li {
+            list-style-type: none;
+            display: flex;
+            margin-bottom: 5px;
+        }
+        .yt li:not(:last-child){
+            margin-bottom: none;
+        }
+        .yt h5 {
+            padding-bottom: 10px;
+            opacity: .5;
+        }
+
+        .H {
+            border: 1px solid;
+            padding-inline: 3px;
+            margin-right: 10px;
+            border-radius: 5px;
+            opacity: .5;
+        }
+
+        .T {
+            border: 1px solid;
+            padding-inline: 4px;
+            margin-right: 10px;
+            border-radius: 5px;
+            opacity: .5;
+        }
+
+        .W {
+            border: 1px solid;
+            padding-inline: 2px;
+            margin-right: 10px;
+            border-radius: 5px;
+            opacity: .5;
+        }
+
+        .last {
+            padding-bottom: 20px;
+            font-weight: 700;
+        }
+        .last i{
+            padding-right: 10px;
+            padding-left: 2px;
+            font-size: large;
+            opacity: .5;
+
+        }
+        .content {
+            width: 80%;
+            height: 100%;
+        }
+
+        .srh {
+            width: 100%;
+            border-bottom: 1px solid;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .srch i {
+            padding-right: 2px;
+            font-size: 16px;
+            opacity: .7;
+        }
+
+        .srch input {
+            border: none;
+            padding-inline: 5px;
+            padding-block: 5px;
+        }
+
+        .searchbar {
+            width: 95%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .bell {
+            display: flex;
+            width: 21%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bell i:first-child {
+            font-size: 20px;
+            border-right: 1px solid;
+            padding-right: 25px;
+        }
+
+        .bell i {
+            opacity: .3;
+        }
+
+        .bell img {
+            width: 15%;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+
+        .blank {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 90%;
+            width: 95%;
+            border-radius: 10px;
+            border: 1px dashed;
+            background-image: repeating-linear-gradient(135deg, white 0px, white 10px, rgb(200, 200, 200) 10px, rgb(207, 206, 206) 11px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="web">
+
+            <div class="nav">
+                <div class="list">
+                    <div class="image">
+                        <img src="logo.webp" alt="">
+                    </div>
+                    <div class="navlist">
+
+                        <li><a href="#" class="co"><i class="fa fa-home fa-sm pur"></i>Dashboard</a></li>
+                        <li><a href="#"><i class="fa fa-user fa-sm"></i>Team</a></li>
+                        <li><a href="#"><i class="fa-regular fa-folder-closed"></i>Projects</a></li>
+                        <li><a href="#"><i class="fa-regular fa-calendar"></i>Calender</a></li>
+                        <li><a href="#"><i class="fa-regular fa-file"></i>Documents</a></li>
+                        <li><a href="#"><i class="fa-regular fa-circle fa-sm"></i>Reports</a></li>
+
+                    </div>
+
+
+                    <div class="yt">
+                        <h5>Your Team</h5>
+                        <li>
+                            <p class="H">H</p><a href="#">Heroicons</a>
+                        </li>
+                        <li>
+                            <p class="T">T</p><a href="#">Tailwind Labs</a>
+                        </li>
+                        <li>
+                            <p class="W">W</p><a href="#">Workcation</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="last"><i class="fa-solid fa-gear fa-lg"></i>Settings</div>
+            </div>
+
+            <div class="content">
+
+
+                <div class="srh">
+                    <div class="searchbar">
+                        <div class="srch">
+                            <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+                            <input type="search" placeholder="Search...">
+                        </div>
+                        <div class="bell">
+                            <i class="fa-sharp fa-regular fa-bell"></i>
+
+                            <img src="Boy.avif" alt="">
+
+                            <h4>Tom Cook</h4>
+                            <i class="fa fa-chevron-down"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="blank">
+                    <div class="box"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
