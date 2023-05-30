@@ -23,6 +23,7 @@
             margin: auto;
             padding-block: 10px;
             border-bottom: 1px solid rgb(83, 82, 82);
+            padding-top: 40px;
         }
 
         .main {
@@ -50,6 +51,7 @@
             color: white;
             border: none;
             background-color: grey;
+            cursor: pointer;
         }
 
         .center {
@@ -58,29 +60,54 @@
             align-items: center;
         }
 
-        .content,
-        .cust,
-        .company {
-            margin-block: 20px;
+        .cust {
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+            gap: 80px;
+        }
+
+        .once {
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
         }
 
         .content {
             width: 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .content p {
+            font-size: 12px;
+        }
+
+        .content i {
+            margin-top: 20px;
+            background-color: rgb(229, 55, 116);
+            padding: 7px;
+            font-size: small;
+            border-radius: 50%;
+            color: white;
+        }
+
+        .content .fb {
+            padding-inline: 10px;
         }
 
         .company {
-            width: 25%;
+            width: 40%;
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
-        .cust {
-            width: 50%;
-        }
-
         li {
             list-style-type: none;
+            opacity: .7;
+            font-size: small;
             padding-block: 10px;
         }
 
@@ -99,10 +126,13 @@
         .second {
             gap: 35px;
             padding-block: 50px;
+            display: flex;
+            padding-top: 70px;
         }
 
-        .one>h3 {
-            padding-block: 20px;
+        .one>h4 {
+            padding-bottom: 20px;
+            padding-top: 2px;
         }
 
         img {
@@ -125,62 +155,66 @@
                 <h2>1-800-222-000</h2>
             </div>
         </header>
-        <div class="second center">
+        <div class="second">
             <div class="content">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel quas maiores.</p>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
-            </div>
-            <div class="cust center">
-                <div class="one">
-                    <h3>Customer</h3>
-                    <ul>
-                        <li>Get Corpo</li>
-                        <li>Documentation</li>
-                        <li>Help Center</li>
-                        <li>Pricing</li>
-                        <li>Contact us</li>
-                    </ul>
-                </div>
-                <div class="one">
-                    <h3>Customer</h3>
-                    <ul>
-                        <li>Get Corpo</li>
-                        <li>Documentation</li>
-                        <li>Help Center</li>
-                        <li>Pricing</li>
-                        <li>Contact us</li>
-                    </ul>
-                </div>
-                <div class="one">
-                    <h3>Customer</h3>
-                    <ul>
-                        <li>Get Corpo</li>
-                        <li>Documentation</li>
-                        <li>Help Center</li>
-                        <li>Pricing</li>
-                        <li>Contact us</li>
-                    </ul>
+                <div class="i">
+                    <i class="fa-brands fa-facebook-f fb"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
                 </div>
             </div>
-            <div class="company">
-                <h2>Company</h2>
-                <div class="flex">
-                    <img src="Boy.avif" alt="">
-                    <div class="date">
-                        <h5>29 March 2021</h5>
-                        <p>Markdown Language</p>
-                        <p>Sample Blog Post Styling</p>
+            <div class="cust">
+                <div class="once">
+                    <div class="one">
+                        <h4>CUSTOMER</h4>
+                        <ul>
+                            <li>Get Corpo</li>
+                            <li>Documentation</li>
+                            <li>Help Center</li>
+                            <li>Pricing</li>
+                            <li>Contact us</li>
+                        </ul>
+                    </div>
+                    <div class="one">
+                        <h4>PRODUCT</h4>
+                        <ul>
+                            <li>Protfolio</li>
+                            <li>Blog</li>
+                            <li>Join our team</li>
+                            <li>Elements</li>
+                            <li>Products</li>
+                        </ul>
+                    </div>
+                    <div class="one">
+                        <h4>COMPANY</h4>
+                        <ul>
+                            <li>About</li>
+                            <li>Careers</li>
+                            <li>Legel & Security</li>
+                            <li>Terms of use</li>
+                            <li>We're hiring!</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="flex">
-                    <img src="girl.avif" alt="">
-                    <div class="date">
-                        <h5>29 March 2021</h5>
-                        <p>Markdown Language</p>
-                        <p>Sample Blog Post Styling</p>
+                <div class="company">
+                    <h3>Company</h3>
+                    <div class="flex">
+                        <img src="Boy.avif" alt="">
+                        <div class="date">
+                            <h5>29 March 2021</h5>
+                            <p>Markdown Language</p>
+                            <p>Sample Blog Post Styling</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <img src="girl.avif" alt="">
+                        <div class="date">
+                            <h5>29 March 2021</h5>
+                            <p>Markdown Language</p>
+                            <p>Sample Blog Post Styling</p>
+                        </div>
                     </div>
                 </div>
             </div>
