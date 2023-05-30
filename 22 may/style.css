@@ -63,13 +63,16 @@ i {
 }
 
 .content2 {
-    text-align: justify;
     padding-inline: 10%;
     padding-block: 5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.content2 p {
+    text-align: justify;
 }
 
 .content2>h2 {
@@ -90,6 +93,13 @@ span {
     gap: 70px;
 }
 
+.content3 h2{
+    position: absolute;
+    right: 0;
+    width: 47%;
+    padding-top: 20px;
+}
+
 iframe {
     border-radius: 10px;
 }
@@ -101,6 +111,7 @@ iframe {
 .future {
     width: 50%;
     padding: 10px;
+    padding-top: 60px;
 }
 
 .future>span {
@@ -304,6 +315,8 @@ footer {
     color: white;
 }
 
+/* -----------------------Media Query at 900px------------------------ */
+
 @media (max-width:900px) {
     body {
         width: 100%;
@@ -318,14 +331,17 @@ footer {
         display: block;
         padding-left: 0px;
     }
-    .content{
+
+    .content {
         display: block;
         text-align: center;
     }
-    .logo img{
+
+    .logo img {
         width: 80%;
     }
-    .content .img{
+
+    .content .img {
         margin: auto;
         padding-top: 30px;
         width: 70%;
@@ -334,73 +350,138 @@ footer {
 
 }
 
-@media (max-width:550px) {
-    body {
-        width: 100%;
-    }
-    .content{
-        display: block;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-    .content .img{
-        margin: auto;
-        padding-top: 30px;
-        width: 70%;
-    }
-    .content div h2{
-        font-size: 40px;
-    }
-    .content3 , .cont4 , .contact , .cont5  {
-        display: block;
-    }
-    
-    .cult,.if , .contact , .fi , .ala {
-        width: 100%;
-    }
-    .ala{
-        font-size: medium;
-    }
-    .cult h2{
-        padding-top: 10px;
-        padding-bottom: 80px;
-    }
-    .cont5 .left{
-        width: 100% ;
-    }
-    .cont5 .right{
-        width: 100% ;
-    }
-    .cont5 .right .right2{
+/* -----------------------Media Query at 800px------------------------ */
 
+@media (max-width:800px) {
+
+    .content3 {
+        display: block;
+        position: relative;
     }
-    .cont5 .center{
-        padding-left: 10px;
-        width: 100% ;
-    }
-    
-    .fi{
-       padding-bottom: 20px;
-    }
+
     .future {
         position: relative;
         width: 100%;
         text-align: left;
     }
 
-    .future h2 {
-        position: absolute;
-        top: -135%;
-        left: 20%;
+    .content3 h2 {
+        position: block;
+        top: 0%;
+        padding-top: 10px;
+        width: 100%;
+        text-align: center;
+        font-size: 35px;
     }
-    .frame{
+
+    .frame {
         width: 100%;
         padding-top: 40px;
     }
-    .logo img{
+}
+
+/* -----------------------Media Query at 550px------------------------ */
+
+@media (max-width:550px) {
+    body {
+        width: 100%;
+    }
+
+    .content {
+        display: block;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .content .img {
+        margin: auto;
+        padding-top: 30px;
         width: 70%;
     }
-    iframe{
+
+    .content div h2 {
+        font-size: 40px;
+    }
+
+    .content2 h2 {
+        font-size: 30px !important;
+    }
+
+    .content3,
+    .cont4,
+    .contact,
+    .cont5 {
+        display: block;
+    }
+
+    .content3 h2 {
+        font-size: 30px !important;
+    }
+
+    .cult,
+    .if,
+    .contact,
+    .fi,
+    .ala {
         width: 100%;
+    }
+
+    .ala {
+        font-size: medium;
+    }
+
+    .cult h2 {
+        padding-top: 10px;
+        padding-bottom: 80px;
+    }
+
+    .cont5 .left {
+        width: 100%;
+    }
+
+    .cont5 .right {
+        width: 100%;
+    }
+
+    .cont5 .center {
+        padding-left: 10px;
+        width: 100%;
+    }
+
+    .fi {
+        padding-bottom: 20px;
+    }
+
+    .frame {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .logo img {
+        width: 70%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
+/* -----------------------Media Query at 470px------------------------ */
+
+@media (max-width:470px) {
+    .content2 h2 {
+        font-size: 25px !important;
+    }
+
+    .content3 h2 {
+        font-size: 20px !important;
+    }
+}
+
+/* -----------------------Media Query at 385px------------------------ */
+
+@media (max-width:385px) {
+    .content2 h2 {
+        font-size: 20px !important;
     }
 }
