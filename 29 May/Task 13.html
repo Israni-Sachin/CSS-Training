@@ -18,6 +18,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .nex {
             display: flex;
             justify-content: center;
@@ -101,15 +102,7 @@
             top: -85%;
         }
 
-        .img img {
-            width: 100%;
-        }
-
-        .img2 img {
-            width: 100%;
-        }
-
-        .img3 img {
+        .rele img {
             width: 100%;
         }
 
@@ -370,14 +363,24 @@
         button {
             cursor: pointer;
         }
-        .bar{
+
+        .bar {
             display: flex;
             gap: 20px;
             justify-content: center;
             align-items: center;
         }
-        .bar i{
+
+        .bar i {
             display: none;
+        }
+
+        .work button {
+            color: white !important;
+            background-color: #0285E4;
+            padding-inline: 25px;
+            padding-block: 7px;
+            border-radius: 20px;
         }
 
         @media(max-width:550px) {
@@ -390,25 +393,198 @@
                 justify-content: space-between;
                 padding-inline: 25px;
             }
-            .bar i{
+
+            .bar i {
                 display: block;
             }
-            .bar button{
+
+            .bar button {
                 padding-inline: 30px;
                 padding-block: 10px;
                 font-size: larger;
             }
-            .cont h1{
-                font-size: 50px;
-                
+
+            .cont h1 {
+                font-size: 45px;
+                padding-top: 75px;
+                padding-inline: 50px;
+
             }
-            .flex p{
+
+            .rele .img {
+                padding-top: 90px;
+                width: 90%;
+            }
+
+            .rele .img2 {
+                top: 63%;
+                left: 26%;
+                width: 70%;
+            }
+
+            .rele .img3 {
+                top: 17%;
+                left: 0%;
+                width: 60%;
+            }
+
+            .blue {
+                border-bottom: 2px solid #0285E4;
+            }
+
+            .navi h2 {
+                width: 35%;
+                margin: auto;
+                padding-bottom: 80px;
+            }
+
+            .cards {
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+
+            .card {
+                width: 55%;
+                margin: auto;
+            }
+
+            .center button {
+                margin-top: 30px;
+                padding-block: 15px;
+                padding-inline: 50px;
+                border-radius: 50px;
+                font-size: medium;
+            }
+
+            .light {
+                flex-wrap: wrap;
+                width: 80%;
+            }
+
+            .light .content {
+                width: 100%;
+                display: block;
+                padding: 0;
+                padding-top: 50px;
+                font-family: sans-serif;
+                text-align: center;
+            }
+
+            .content h1 {
+                width: 80%;
+                padding-inline: 0;
+                padding-top: 50px;
+                margin: auto;
+                font-size: 50px;
+            }
+
+            .content .auto {
+                width: 90%;
+                padding-top: 10px;
+                padding-inline: 0 !important;
+                font-size: 20px;
+                opacity: .7;
+                margin: auto;
+            }
+
+            .content .in {
+                width: 100%;
+                padding-top: 20px;
+                padding-inline: 0 !important;
+                margin: auto;
+            }
+
+            .content .in input {
+                width: 80%;
+                padding: 20px 20px;
+                text-align: center;
+                font-size: medium;
+                font-weight: 700;
+                border: 1px solid rgb(203, 203, 203);
+                border-radius: 30px;
+                margin-bottom: 10px;
+            }
+
+            .content .in button {
+                width: 90%;
+                padding-block: 20px;
+                border-radius: 30px;
+                font-size: large;
+                margin-bottom: 60px;
+            }
+
+            .phone {
+                width: 80%;
+                margin: auto;
+                height: 720px;
+                margin-bottom: 40px;
+                border-radius: 40px;
+            }
+            .phone img{
+                width: 100%;
+                height: 99%;
+            }
+            .work{
+                width: 60%;
+                padding: 120px 0px;
+            }
+            .work h1{
+                font-size: 45px;
+                font-family: sans-serif;
+                text-align: center;
+            }
+            .work .w50{
+                font-size: 15px;
+                padding: 20px 0;
+                opacity: .6;
+                width: 100%;
+                font-family: sans-serif;
+                text-align: center;
+            }
+            .work .f{
+                height: 15px;
+                margin-bottom: 10px;
+            }
+            .work .fsb{
+                height: 100%;
+                width: 70%;
+            }
+            .worko{
+                font-weight: 700;
+                opacity: .6;
+            }
+            .work button{
+                padding: 15px 45px;
+                border-radius: 30px;
+                font-size: 20px;
+            }
+            .flex p {
                 font-size: 25px;
                 width: 100%;
             }
-            .nex button{
+
+            .nex button {
                 font-size: larger;
                 padding-inline: 50px;
+            }
+
+            footer {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding-bottom: 30px;
+            }
+
+            .icons {
+                padding-bottom: 20px;
+                padding-right: 30px;
+            }
+            .icons i{
+                font-size: 40px;
+                padding-left: 20px;
+            }
+            footer .write{
+                font-size: 14px;
             }
         }
     </style>
@@ -537,7 +713,7 @@
     <div class="light">
         <div class="content">
             <h1>OpenType features and Variable fonts</h1>
-            <div>Most calendars are designed for teams. Slate is designed
+            <div class="auto">Most calendars are designed for teams. Slate is designed
                 for freelancers who want a simple way to plan their schedule.</div>
             <div class="in">
                 <input type="text" placeholder="Enter Your Email Address">
@@ -562,6 +738,7 @@
                 <div>35,929</div>
             </div>
         </div>
+        <button>Try For Free</button>
     </div>
 
     <footer>

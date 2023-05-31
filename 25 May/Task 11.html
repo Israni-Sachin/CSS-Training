@@ -18,7 +18,7 @@
         }
 
         body {
-            background-color: rgb(221, 221, 221);
+            background-color: rgb(255, 255, 255);
         }
 
         .container {
@@ -27,12 +27,12 @@
         }
 
         .left {
-            width: 10%;
+            width: 12%;
             height: 100%;
-            padding: 12px;
-            margin-inline: 15px;
+            padding: 14px 12px;
+            margin:0 35px 0 15px;
             background-color: white;
-            box-shadow: 0 0 10px 0 rgb(168, 165, 165);
+            box-shadow: 0 0 10px 0 rgb(220, 220, 220);
             border-radius: 3px;
         }
 
@@ -43,9 +43,7 @@
         }
 
         li {
-            padding-right: 20px;
-            padding-left: 10px;
-            padding-block: 8px;
+            padding: 10px 20px 10px 10px;
         }
 
         i {
@@ -56,7 +54,7 @@
         .center {
             width: 65%;
             margin-bottom: 20px;
-            box-shadow: 0 0 10px 0 rgb(168, 165, 165);
+            box-shadow: 0 0 10px 0 rgb(220, 220, 220);
             background-color: white;
             padding: 20px;
         }
@@ -66,8 +64,12 @@
             justify-content: center;
             align-items: center;
             font-size: small;
-            height: 120px;
-            background-color: rgb(212, 207, 207);
+            height: 140px;
+            width: 140px !important;
+            border-radius: 3px;
+            opacity: .5;
+            font-weight: 700;
+            background-color: rgb(234, 234, 234);
         }
 
         .profile {
@@ -77,24 +79,25 @@
         }
 
         .box2 p {
-            font-size: small;
+            font-size: 15px;
             opacity: .8;
         }
 
         .last {
             font-size: smaller;
             opacity: .5;
-            padding-top: 4px;
+            padding-top: 5px;
         }
 
         .box2 button {
             color: white;
-            background-color: rgb(63, 63, 247);
+            background-color: rgb(52, 116, 255);
             padding-inline: 10px;
-            padding-block: 5px;
+            padding-block: 7px;
             margin-top: 10px;
             border: none;
             border-radius: 3px;
+            font-size: 15px;
         }
 
         .box2 button i {
@@ -102,8 +105,9 @@
         }
 
         .box2 h3 {
-            padding-block: 5px;
+            padding: 0 5px 0 0px;
             padding-bottom: 10px;
+            font-size: 25px;
         }
 
         .box {
@@ -177,9 +181,6 @@
             width: 100%;
         }
 
-        /* textarea{
-            resize: none;
-        } */
         input,
         textarea {
             margin-top: 5px;
@@ -201,9 +202,12 @@
         }
         .pass input{
             margin-bottom: 10px;
-            padding-block: 5px;
+            padding: 5px 5px;
         }
-        .keep h3,p{
+        .keep h3{
+            padding-bottom: 10px;
+        }
+        .keep p{
             padding-bottom: 10px;
         }
 
@@ -215,10 +219,11 @@
 
         .save button{
             color: white;
-            background-color: blue;
-            padding: 5px;
+            background-color: rgb(0, 115, 255);
+            padding: 7px 15px;
             border: none;
-            border-radius: 2px;
+            border-radius: 5px;
+            font-size:medium;
         }
 
         .right {
@@ -227,6 +232,7 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
+            margin: 0 15px 0 20px;
         }
 
         .right i {
@@ -238,7 +244,7 @@
             padding: 15px;
             display: flex;
             justify-content: center;
-            box-shadow: 0 0 10px 0 rgb(168, 165, 165);
+            box-shadow: 0 0 10px 0 rgb(220, 220, 220);
         }
 
         .button button {
@@ -256,7 +262,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-            box-shadow: 0 0 10px 0 rgb(168, 165, 165);
+            box-shadow: 0 0 10px 0 rgb(220, 220, 220);
         }
 
         .content button {
@@ -313,42 +319,42 @@
                 <div class="name">
                     <div class="fname">
                         <label for="fname">Full Name</label><br>
-                        <input type="text" id="fname" placeholder="John Smith">
+                        <input type="text" id="fname" placeholder="  John Smith">
                     </div>
                     <div class="fname">
                         <label for="uname">Username</label><br>
-                        <input type="text" id="uname" placeholder="johnny.s">
+                        <input type="text" id="uname" placeholder="  johnny.s">
                     </div>
                 </div>
                 <div class="email">
                     <label for="email">Email</label><br>
-                    <input type="text" id="email" placeholder="user@example.com">
+                    <input type="text" id="email" placeholder="  user@example.com">
                 </div>
                 <div class="about">
                     <label for="about">About</label><br>
-                    <textarea name="about" id="about" cols="10" rows="7" placeholder="My Bio"></textarea>
+                    <textarea name="about" id="about" cols="10" rows="7" placeholder="  My Bio"></textarea>
                 </div>
                 <div class="end">
                     <div class="pass">
                         <h3>Change Password</h3>
                         <label for="cpass">Current Password</label>
-                        <input type="password" id="cpass">
+                        <input type="password" id="cpass" placeholder="••••••">
                         <label for="npass">New Password</label>
-                        <input type="password" id="npass">
+                        <input type="password" id="npass" placeholder="••••••">
                         <label for="copass">Confirm Password</label>
-                        <input type="password" id="copass">
+                        <input type="password" id="copass" placeholder="••••••">
                     </div>
                     <div class="keep">
                         <h3>Keeping In Touch</h3>
                         <p>Email Notification</p>
 
-                        <input type="checkbox" name="emailn" id="Blog">
+                        &nbsp;<input type="checkbox" name="emailn" checked id="Blog">
                         <label for="Blog">Blog Posts</label><br>
 
-                        <input type="checkbox" name="emailn" id="news">
+                        &nbsp;<input type="checkbox" name="emailn" checked id="news">
                         <label for="news">Newsletter</label><br>
 
-                        <input type="checkbox" name="emailn" id="personal">
+                        &nbsp;<input type="checkbox" name="emailn" checked id="personal">
                         <label for="personal">Personal Offers</label>
                     </div>
                 </div>
