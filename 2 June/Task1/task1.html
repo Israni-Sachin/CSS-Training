@@ -38,7 +38,8 @@
             font-size: 20px;
             margin-top: 25px;
             line-height: 30px;
-            padding-inline: 280px;
+            width: 60%;
+            margin: auto;
             color: white;
         }
 
@@ -83,10 +84,11 @@
         .cards {
             display: flex;
             gap: 30px;
-            padding-inline: 30px;
             margin-top: 40px;
         }
-
+        section{
+            padding-inline: 30px;
+        }
         .card {
             color: #fff;
             border: 1px solid rgb(86, 81, 81);
@@ -158,6 +160,9 @@
                 flex-wrap: wrap;
                 justify-content: center;
             }
+            header p{
+                width: 80%;
+            }
         }
     </Style>
     <title>Task 1</title>
@@ -175,9 +180,14 @@
         <div class="but">
             <div class="button">
                 <button>Monthly</button>
-                <button>Annually</button>
+                <button type="button" onclick="change()">Annually</button>
             </div>
         </div>
+        <script>
+            function change(){
+                section.display=none
+            }
+        </script>
 
         <div class="cards">
             <div class="card">
