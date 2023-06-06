@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Task 2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 30px 100px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 30px;
+        }
+
+        .icon{
+            padding-right: 10px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .flex li {
+            list-style-type: none;
+            margin-right: 25px;
+            font-size: 17px;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .drop {
+            margin-bottom: 25px;
+        }
+
+        .none ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #cecece;
+            background-color: rgb(252, 252, 252);
+            margin-right: 0;
+            padding-block: 10px;
+            font-size: 16px;
+        }
+
+        .none ul li:first-child {
+            border-top: 1px solid #cecece;
+        }
+
+        .block:hover .none {
+            display: block;
+        }
+
+        .abs {
+            display: none;
+            position: absolute;
+            right: -200px;
+            left: 100%;
+            top: 0%;
+        }
+
+        .abso {
+            display: none;
+            position: absolute;
+            right: -200px;
+            left: 100%;
+            top: 0%;
+        }
+
+        .abs li {
+            padding-left: 20px;
+            background-color: rgb(252, 252, 252);
+        }
+
+        .abs ul li:first-child {
+            border-top: 0;
+        }
+
+        .rel {
+            position: relative;
+        }
+
+        .rel:hover .abs {
+            display: block;
+        }
+
+        .rele:hover .abso {
+            display: block;
+        }
+
+        li {
+            color: black;
+        }
+
+        li:hover {
+            color: red;
+        }
+        h4:hover{
+            color: red;
+        }
+        .position{
+            display: flex;
+            position: absolute;
+            border: 1px solid rgb(232, 231, 231);
+            box-shadow: 0 0 10px 5px rgb(241, 241, 241);
+            width: 100%;
+            left: 0%;
+            top: 100%;
+            color: black;
+        }
+        .position ul{
+            width: 25%;
+            border-right: 1px solid rgb(232, 232, 232);
+            padding: 30px 20px 10px 20px;
+        }
+        .position ul h4{
+            margin-bottom: 20px;
+        }
+        .position ul li{
+            margin-bottom: 20px;
+        }
+        .reletive{
+            position: relative;
+        }
+        .mega2{
+            margin-bottom: 20px;
+            padding-bottom: 0px !important;
+        }
+        .mega2:hover .position{
+            display: flex;
+        }
+        .dis{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="reletive">
+        <div class="logo">
+            LOGO
+        </div>
+
+        <nav>
+
+            <ul class="flex">
+
+                <li>HOME</li>
+
+                <div class="block">
+                    <li class="drop"><span>DROPDOWN MENU</span> <i class="fa fa-chevron-down"></i> </li>
+                    <li class="none">
+
+                        <ul>
+                            <li><span>Menu Level 2</span> <i class="fa fa-chevron-right"></i> </li>
+                            <li class="rel"><span>Menu Level 2</span>
+                                <i class="fa fa-chevron-right"></i>
+                                <div class="abs">
+                                    <ul>
+                                        <li class="rele"><Span>Menu Level 3</Span>
+                                            <i class="fa fa-chevron-right"></i>
+                                            <ul class="abso ">
+                                                <li>Link 1</li>
+                                                <li>Link 2</li>
+                                                <li>Link 3</li>
+                                                <li>Link 4</li>
+                                                <li>Link 5</li>
+                                            </ul>
+                                        </li>
+                                        <li>Link 1</li>
+                                        <li>Link 2</li>
+                                        <li>Link 3</li>
+                                        <li>Link 4</li>
+                                        <li>Link 5</li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li><span>Menu Level 2</span> <i class="fa fa-chevron-right"></i> </li>
+                            <li>Link 1</li>
+                            <li>Link 2</li>
+                            <li>Link 3</li>
+                            <li>Link 4</li>
+                            <li>Link 5</li>
+                        </ul>
+
+                    </li>
+                </div>
+
+
+                <li><span>MEGA MENU</span>
+                    <i class="fa fa-chevron-down"></i>
+                </li>
+
+
+                <li class="mega2"><span>MEGA MENU 2 </span>
+                    <i class="fa fa-chevron-down"></i>
+                    <div class="position dis">
+                        <ul>
+                            <h4>TITLE NAME</h4>
+                            <li>Link 1</li>
+                            <li>Link 2</li>
+                            <li>Link 3</li>
+                            <li>Link 4</li>
+                            <li>Link 5</li>
+                        </ul>
+                        <ul>
+                            <h4>TITLE NAME</h4>
+                            <li>Link 1</li>
+                            <li>Link 2</li>
+                            <li>Link 3</li>
+                            <li>Link 4</li>
+                            <li>Link 5</li>
+                        </ul>
+                        <ul>
+                            <h4>TITLE NAME</h4>
+                            <li>Link 1</li>
+                            <li>Link 2</li>
+                            <li>Link 3</li>
+                            <li>Link 4</li>
+                            <li>Link 5</li>
+                        </ul>
+                        <ul>
+                            <h4>TITLE NAME</h4>
+                            <li>Link 1</li>
+                            <li>Link 2</li>
+                            <li>Link 3</li>
+                            <li>Link 4</li>
+                            <li>Link 5</li>
+                        </ul>
+                    </div>
+                </li>
+
+
+                <div class="icon">
+                    <i class="fa fa-search"></i>
+                </div>
+
+            </ul>
+
+        </nav>
+
+    </header>
+</body>
+
+</html>
