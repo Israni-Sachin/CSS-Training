@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Practice Task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        .bgimg-1 {
+            height: 100vh;
+            background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url("https://source.unsplash.com/random/1400x1000/?business") no-repeat;
+            background-size: cover;
+        }
+
+        .dewi {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 2px;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, .7) !important;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .navbar-brand {
+            font-size: 14px;
+            position: relative;
+        }
+
+        ul .hov::before {
+            content: "";
+            position: absolute;
+            left: 0%;
+            width: 0%;
+            bottom: 0;
+            transition: all .5s ease;
+            border-bottom: 2px solid red;
+        }
+
+        ul .hov:hover::before {
+            left: 0;
+            width: 100%;
+        }
+
+        .rele {
+            position: relative;
+            top: 40%;
+        }
+
+        .btn1:hover {
+            background-color: orangered;
+            border: 1px solid orangered !important;
+        }
+
+        .btn2 {
+            background-color: orangered;
+            transition: .5s;
+        }
+
+        .btn2:hover {
+            background-color: transparent;
+            border: 1px solid white !important;
+            color: white !important;
+        }
+
+        .btn3 {
+            transition: .5s;
+            font-size: 25px;
+            margin-right: 4px;
+        }
+
+        .btn4:hover .btn3 {
+            color: orangered !important;
+            border: 1px solid orangered !important;
+        }
+
+        .sa {
+            margin: 10px;
+        }
+
+        .nextpage {
+            position: relative;
+            top: 73%;
+            background-color: #fff;
+        }
+
+        .emoji {
+            font-size: 50px;
+        }
+
+        .np {
+            box-shadow: 0 0 20px 0 rgb(142, 142, 142);
+        }
+
+        
+        .card img {
+            width: 100% !important;
+            height: auto !important;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
+        }
+        .bgimg-2 {
+            height: 100vh;
+            background: linear-gradient(rgba(255, 255, 255, 0.674), rgba(255, 255, 255, 0.608)), url("https://source.unsplash.com/random/1400x1000/?nature") no-repeat;
+            background-size: cover;
+        }
+
+        .bgimg-1,
+        .bgimg-2 {
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgimg-1">
+        <nav class="navbar fixed-top ">
+
+            <div class="container text-white">
+                <a href="#" class="dewi navbar-brand fs-1 text-white">Dewi</a>
+                <ul class="d-flex align-items-center">
+                    <li><a href="#" class="navbar-brand text-white border-danger border-bottom">HOME</a></li>
+                    <li><a href="#about" class="navbar-brand hov text-white">ABOUT</a></li>
+                    <li><a href="#" class="navbar-brand hov text-white">SERVICES</a></li>
+                    <li><a href="#" class="navbar-brand hov text-white">PROTFOLIO</a></li>
+                    <li><a href="#" class="navbar-brand hov text-white">TEAM</a></li>
+                    <li>
+                        <a href="#" class="navbar-brand hov text-white"> DROP DOWN <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </li>
+                    <li><a href="#" class="navbar-brand hov text-white">Contact</a></li>
+                </ul>
+                <button type="button" class="btn text-white border px-4 py-2 btn1">GET STARTED</button>
+            </div>
+        </nav>
+
+        <div class="rele text-white text-center">
+            <div class="fs-1">PLAN. LAUNCH. GROW.</div>
+            <div class="fs-3 sa">We are team of talented designers making websites with Bootstrap</div>
+            <button type="button" class="btn text-white px-4 py-2 btn2">GET STARTED</button>
+            <button type="button" class="btn text-white btn4 px-4 py-2">
+                <i class="bi bi-play border rounded-circle ps-1 btn3"></i> Watch Video</button>
+        </div>
+    </div>
+
+    <div class="nextpage pt-5" id="about">
+        <div class="container bg-white np mb-5">
+            <div class="row">
+                <div class="col-3 ps-5 my-4 d-flex align-items-center">
+                    <div class="me-4"><i class="bi bi-emoji-smile emoji"></i></div>
+                    <div class="">
+                        <h3 class="m-0 mt-4">125</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-3 ps-5 my-4 d-flex align-items-center">
+                    <div class="me-4"><i class="bi bi-book emoji"></i></div>
+                    <div class="">
+                        <h3 class="m-0 mt-4">85</h3>
+                        <p>Projects</p>
+                    </div>
+                </div>
+                <div class="col-3 ps-5 my-4 d-flex align-items-center">
+                    <div class="me-4"><i class="bi bi-clock emoji"></i></div>
+                    <div class="">
+                        <h3 class="m-0 mt-4">35</h3>
+                        <p>Years of experience</p>
+                    </div>
+                </div>
+                <div class="col-3 ps-5 my-4 d-flex align-items-center">
+                    <div class="me-4"><i class="bi bi-award emoji"></i></div>
+                    <div class="">
+                        <h3 class="m-0 mt-4">48</h3>
+                        <p>Awards</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-6 pb-3 pe-3">
+                    <iframe width="550" height="315" src="https://www.youtube.com/embed/uOA5h_KdjO4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen class="h-100"></iframe>
+                </div>
+                <div class="col-6 pb-3 pe-3">
+                    <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
+                    <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.</i></p>
+                    <p><i class="bi bi-check-all text-danger"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                    <p><i class="bi bi-check-all text-danger"></i> Duis aute irure dolor in reprehenderit in voluptate
+                        velit.</p>
+                    <p><i class="bi bi-check-all text-danger"></i> Voluptate repellendus pariatur reprehenderit corporis
+                        sint.</p>
+                    <p><i class="bi bi-check-all text-danger"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro
+                        dolore eu fugiat nulla pariatur.</p>
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+        </div>
+        <main class="bgimg-2 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="card col-4 p-0 bg-transparent border-0 pe-4">
+                        <div class="bg-white np border-0 rounded">
+                            <img src="https://source.unsplash.com/random/1400x1000/?dark laptop" alt="">
+                            <div class="px-4 mt-3">
+                                <h5 class="text-center">Our Mission</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et
+                                    dolore
+                                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                    nisi ut
+                                    aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-4 p-0 bg-transparent border-0 pe-4">
+                        <div class="bg-white np border-0 rounded">
+                            <img src="https://source.unsplash.com/random/1400x1000/?dark planning" alt="">
+                            <div class="px-4 mt-3">
+                                <h5 class="text-center">Our Plan</h5>
+                                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem doloremque laudantium,
+                                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                    beatae vitae dicta sunt explicabo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-4 p-0 bg-transparent border-0 pe-4">
+                        <div class="bg-white np border-0 rounded">
+                            <img src="https://source.unsplash.com/random/1400x1000/?dark food" alt="">
+                            <div class="px-4 mt-3">
+                                <h5 class="text-center">Our Vision</h5>
+                                <p>Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni
+                                    dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui
+                                    dolorem ipsum quia dolor sit amet.qui dolorem ipsum quia dolor sit amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
