@@ -21,7 +21,7 @@ body {
     height: 100%;
     padding-left: 22px;
     padding-top: 33px;
-    border-right: 1px solid;
+    border-right: 1px solid rgb(211, 211, 211);
     display: flex;
     flex-direction: column;
 }
@@ -82,18 +82,19 @@ ul i {
     margin-left: 19%;
 }
 
-.story {
+/* .story {
     height: 20%;
     width: 100%;
     display: flex;
     justify-content: space-around;
     position: relative;
-}
+    overflow-y: hidden !important;
+} */
 
 .one {
-    width: 11%;
+    width: 70px;
     height: 110px;
-    padding-top: 40px;
+    padding-bottom: 40px;
     text-align: center;
 }
 
@@ -113,8 +114,8 @@ ul i {
 
 .mainn .idk {
     position: relative;
-    top: -10%;
-    left: 94%;
+    top: -16%;
+    left: 96%;
     color: white;
 }
 
@@ -127,6 +128,7 @@ ul i {
     width: 100%;
     height: 21%;
     display: flex;
+    user-select: none;
     padding-top: 15px;
 }
 
@@ -256,6 +258,7 @@ ul i {
 }
 
 .a span {
+    user-select: none;
     font-size: 10px;
 }
 
@@ -267,11 +270,12 @@ ul i {
 
 .pm {
     width: 100%;
+    user-select: none;
     padding-left: 5px;
 }
 
-.feed {
-    padding-top: 30px;
+.story{
+    margin-top: 20px;
 }
 
 .frame {
@@ -323,13 +327,177 @@ ul i {
     left: 435px;
     cursor: pointer;
 }
-.lcs i{
+
+.lcs i {
     color: black;
     position: relative;
+
 }
-.lcs{
+
+.lcs {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    margin: 5px 0 40px 0;
+    padding: 0 10px;
+}
+
+.phele {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    /* margin-left: 10px; */
+}
+
+.insta {
+    display: none;
+}
+
+.botstick {
+    display: none;
+}
+
+
+
+
+
+
+.story {
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
+    touch-action: pan-x;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.story::-webkit-scrollbar {
+    display: none;
+}
+
+.one {
+    height: 110px;
+    width: 70px;
+    flex-shrink: 0;
+}
+
+.one:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* hacky fix for padding at the end of the list */
+.one:last-child {
+    position: relative;
+}
+
+.one:last-child::after {
+    position: absolute;
+    left: 100%;
+    height: 1px;
+    width: 20px;
+    display: block;
+    content: "";
+}
+
+
+
+
+
+
+@media (max-width:450px) {
+    .navbar {
+        display: none;
+    }
+
+    .pros {
+        display: none;
+    }
+
+    .mainn {
+        width: 100%;
+        display: relative;
+        margin: 0;
+    }
+
+    .story {
+        width: 100%;
+    }
+
+    .feed {
+        width: 100%;
+    }
+
+    .frame {
+        margin-top: 30px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .frame video {
+        width: 100%;
+        border-radius: 0;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .bar i {
+        position: relative;
+        top: -30px;
+        left: 95%;
+    }
+
+    .insta {
+        display: block;
+        height: 100px;
+        width: 100%;
+        border-bottom: 2px solid rgb(238, 238, 238);
+        padding: 10px 10px;
+    }
+
+    .insta img {
+        width: 30%;
+        height: auto;
+    }
+
+    .insta i {
+        float: right;
+        margin-top: 10px;
+        font-size: 25px;
+        margin-inline: 5px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainn .idk{
+        display: none;
+    }
+
+    .story {
+        height: 6%;
+        padding-left: 5px !important;
+    }
+.story{
+    margin-top: 0px;
+
+}
+    footer {
+        position: fixed;
+        list-style: none;
+        width: 100%;
+        bottom: 0;
+        background-color: rgb(248, 248, 248);
+    }
+
+    .botstick {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+    }
 }
